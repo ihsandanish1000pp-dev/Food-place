@@ -1,52 +1,18 @@
-let AdminBtn = document.querySelector("#admin-btn");
-
-AdminBtn.addEventListener("click", Admin);
-
-function Admin() {
-  document.getElementById("Admin-pinal").innerHTML = `
-            <div class = 'adminpinal'>
-                <h3> Wellcome Addmin pinel</h3>
-                <p> Manage you are food ordering Website </p>
-            </div>
 
 
-            <button class = 'adminpinal-button'>Manage Food</button>
-            <button class = 'adminpinal-button1' >View Orders</button>
-            <button class = 'adminpinal-button2' >Manage Customers</button>
-         `;
-}
-
-
-
-
-  document.getElementById('Admin-pinal').addEventListener('click', function(event) {
-
-    if (event.target.classList.contains('adminpinal-button')) {
-        addMangeFoodBtn();
+document
+  .getElementById("Admin-pinal")
+  .addEventListener("click", function (event) {
+    if (event.target.classList.contains("adminpinal-button")) {
+      addMangeFoodBtn();
     }
-
-});
+  });
 
 function addMangeFoodBtn() {
-    document.getElementById('Admin-pinal').innerHTML = `
+  document.getElementById("Admin-pinal").innerHTML = `
         <h3>Welcome to Manage Food</h3>
     `;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let burgarnBtn = document.querySelector(".burgar-btn");
 
@@ -88,3 +54,20 @@ function cheeps() {
 
         `;
 }
+
+let AdminBtnn = document.querySelector("#admin-btn");
+
+AdminBtnn.addEventListener("click", goToAdminPage);
+
+function goToAdminPage() {
+  window.location.href = "Admin-page.html";
+}
+
+
+
+  
+//  Admin page
+
+
+
+ l
