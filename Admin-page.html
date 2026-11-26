@@ -1,31 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Admin Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- <h1> wellcome to  Admin Page</h1> -->
 
-    <div id="Admin-pinal">
-        <h1> Wellcome To Admin Page</h1>
+    <!-- Admin Dashboard -->
+
+    <div class="admin-dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="admin-sidebar">
+
+            <h2>Restaurant Admin</h2>
+
+            <ul>
+                <li>
+                    <a href="Admin-page.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="Manage-food.html">Manage Food</a>
+                </li>
+
+                <li>
+                    <a href="view-page.html">View Orders</a>
+                </li>
+
+                <li>
+                    <a href="Manage-cunstomer.html">Manage Customers</a>
+                </li>
+
+                <li>
+                    <a href="home.html">Back to Website</a>
+                </li>
+            </ul>
+
+        </aside>
 
 
-        <button id="mangeFood">Food Mange</button>
-        <button id="viewOrder">View Order</button>
-        <button id="Mcustomer">Manage Customer</button>
+        <!-- Main Content -->
+
+        <main class="admin-content">
+
+            <header class="admin-header">
+
+                <h1>Welcome to Admin Dashboard</h1>
+
+                <p>Manage your restaurant from one place</p>
+
+            </header>
+
+
+            <!-- Dashboard Cards -->
+
+            <section class="dashboard-cards">
+
+                <div class="admin-card">
+                    <h3>Total Food Items</h3>
+                    <h2>25</h2>
+                    <p>Available Food</p>
+                </div>
+
+                <div class="admin-card">
+                    <h3>Total Orders</h3>
+                    <h2>120</h2>
+                    <p>Customer Orders</p>
+                </div>
+
+                <div class="admin-card">
+                    <h3>Total Customers</h3>
+                    <h2>85</h2>
+                    <p>Registered Customers</p>
+                </div>
+
+                <div class="admin-card">
+                    <h3>Total Revenue</h3>
+                    <h2>Rs. 50,000</h2>
+                    <p>Restaurant Earnings</p>
+                </div>
+
+            </section>
+
+
+            <!-- Management Options -->
+
+            <section class="management-section">
+
+                <h2>Management</h2>
+
+                <div class="management-cards">
+
+                    <div class="management-card">
+
+                        <h3>Food Management</h3>
+
+                        <p>Add, edit and delete food items.</p>
+
+                        <a href="Manage-food.html">
+                            Manage Food
+                        </a>
+
+                    </div>
+
+
+                    <div class="management-card">
+
+                        <h3>Order Management</h3>
+
+                        <p>View and manage customer orders.</p>
+
+                        <a href="view-page.html">
+                            View Orders
+                        </a>
+
+                    </div>
+
+
+                    <div class="management-card">
+
+                        <h3>Customer Management</h3>
+
+                        <p>View and manage your customers.</p>
+
+                        <a href="Manage-cunstomer.html">
+                            Manage Customers
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
     </div>
 
-    <div id="Mfood"></div>
-    <div id="viewFood"></div>
-    <div id="Mangecustomer"></div>
 
+    <script src="script.js"></script>
 
-    <script src="admin-pag.js"></script>
 </body>
 
 </html>

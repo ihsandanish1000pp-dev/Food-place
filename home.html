@@ -1,60 +1,215 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Website</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navbar -->
+
+    <nav class="nav-bar">
+
+        <h2 class="logo">Food<span>Zone</span></h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="Admin-page.html" class="admin-btn">
+            Admin
+        </a>
+
+    </nav>
 
 
-  <div class="nav-bar">
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Services</li>
-      <li>Contact</li>
-    </ul>
+    <!-- Hero Section -->
 
-    <button id="admin-btn"> Admin </button>
-  </div>
+    <section class="hero">
 
+        <div class="hero-content">
 
+            <h1>Delicious Food For Every Mood</h1>
 
+            <p>
+                Enjoy fresh, delicious and tasty food.
+                Order your favorite meal today!
+            </p>
 
-  <div class="main-container">
-    <div class="container-1">
-      <img class="img-1" src="images.jpg" alt="" srcset="">
-      <div id="result"></div>
-      <button class="burgar-btn">place order</button>
-    </div>
-    <div class="container-2">
-      <img class="img-1" src="images .jpg" srcset="">
-      <div id="res"></div>
-      <button class="sallad-btn">place order</button>
-    </div>
-    <div class="container-3">
-      <img class="img-1" src="Salami-pizza-hero.avif" srcset="">
-      <div id="res1"></div>
-      <button class="pizz-btn">place order</button>
-    </div>
-    <div class="container-4">
-      <img class="img-1" src="images2 .jpg" srcset="">
-      <div id="res2"></div>
-      <button class="cheeps-btn">place order</button>
-    </div>
-  </div>
+            <a href="#menu" class="hero-btn">
+                Explore Menu
+            </a>
+
+        </div>
+
+    </section>
 
 
+    <!-- Food Menu -->
+
+    <section class="food-section" id="menu">
+
+        <div class="section-heading">
+
+            <h2>Our Popular Food</h2>
+
+            <p>Choose your favorite food and place your order.</p>
+
+        </div>
 
 
+        <div class="main-container">
 
-      <div id="Admin-pinal"></div>
-  <script src="script.js"></script>
+
+            <!-- Burger -->
+
+            <div class="food-card">
+
+                <img src="images.jpg" alt="Burger">
+
+                <div class="food-info">
+
+                    <h3>Chicken Burger</h3>
+
+                    <p>Fresh and delicious chicken burger.</p>
+
+                    <h4>Rs. 500</h4>
+
+                    <button class="burgar-btn">
+                        Place Order
+                    </button>
+
+                </div>
+
+                <div id="result"></div>
+
+            </div>
+
+
+            <!-- Salad -->
+
+            <div class="food-card">
+
+                <img src="images .jpg" alt="Salad">
+
+                <div class="food-info">
+
+                    <h3>Fresh Salad</h3>
+
+                    <p>Healthy and fresh vegetable salad.</p>
+
+                    <h4>Rs. 300</h4>
+
+                    <button class="sallad-btn">
+                        Place Order
+                    </button>
+
+                </div>
+
+                <div id="res"></div>
+
+            </div>
+
+
+            <!-- Pizza -->
+
+            <div class="food-card">
+
+                <img src="Salami-pizza-hero.avif" alt="Pizza">
+
+                <div class="food-info">
+
+                    <h3>Chicken Pizza</h3>
+
+                    <p>Hot and cheesy chicken pizza.</p>
+
+                    <h4>Rs. 1200</h4>
+
+                    <button class="pizz-btn">
+                        Place Order
+                    </button>
+
+                </div>
+
+                <div id="res1"></div>
+
+            </div>
+
+
+            <!-- Fries -->
+
+            <div class="food-card">
+
+                <img src="images2 .jpg" alt="Fries">
+
+                <div class="food-info">
+
+                    <h3>French Fries</h3>
+
+                    <p>Crispy and tasty golden fries.</p>
+
+                    <h4>Rs. 250</h4>
+
+                    <button class="cheeps-btn">
+                        Place Order
+                    </button>
+
+                </div>
+
+                <div id="res2"></div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about-section" id="about">
+
+        <h2>About Our Restaurant</h2>
+
+        <p>
+            We serve fresh, delicious and quality food.
+            Our goal is to provide the best food experience
+            to our customers.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="contact">
+
+        <h2>FoodZone Restaurant</h2>
+
+        <p>Fresh Food | Best Quality | Great Taste</p>
+
+        <p>Contact: 03001234567</p>
+
+        <p class="copyright">
+            © 2026 FoodZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

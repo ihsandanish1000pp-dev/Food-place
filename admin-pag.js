@@ -11,12 +11,18 @@ function managefood() {
      `;
 }
 
+
+
 let manaGefood = document.querySelector("#mangeFood");
 manaGefood.addEventListener("click", FoodMangepage);
 
 function FoodMangepage() {
   window.location.href = "Manage-food.html";
 }
+
+
+
+
 //   view Food Button
 
 let viewOrder = document.querySelector("#viewOrder");
@@ -30,6 +36,14 @@ function viewBtn() {
     
     `;
 }
+
+
+//  let ViewPage = document.querySelector('#viewOrder');
+  
+//     ViewPage.addEventListener('click', function(){
+//         window.location.href=('view-page.html')
+//     })
+
 
 //   customer Food Button
 

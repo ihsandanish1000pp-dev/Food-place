@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Customers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="customer-dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="customer-sidebar">
+
+            <h2>Restaurant Admin</h2>
+
+            <ul>
+                <li><a href="Admin-page.html">Dashboard</a></li>
+                <li><a href="Manage-food.html">Manage Food</a></li>
+                <li><a href="view-page.html">View Orders</a></li>
+                <li><a href="Manage-customer.html" class="active">Manage Customers</a></li>
+                <li><a href="home.html">Back to Website</a></li>
+            </ul>
+
+        </aside>
+
+
+        <!-- Main Content -->
+
+        <main class="customer-content">
+
+            <header class="customer-header">
+
+                <div>
+                    <h1>Manage Customers</h1>
+                    <p>View and manage your restaurant customers.</p>
+                </div>
+
+                <a href="Admin-page.html" class="back-btn">
+                    Back to Dashboard
+                </a>
+
+            </header>
+
+
+            <!-- Customer Statistics -->
+
+            <section class="customer-stats">
+
+                <div class="customer-stat-card">
+                    <h3>Total Customers</h3>
+                    <h2>85</h2>
+                    <p>Registered Customers</p>
+                </div>
+
+                <div class="customer-stat-card">
+                    <h3>Active Customers</h3>
+                    <h2>65</h2>
+                    <p>Currently Active</p>
+                </div>
+
+                <div class="customer-stat-card">
+                    <h3>New Customers</h3>
+                    <h2>12</h2>
+                    <p>This Month</p>
+                </div>
+
+            </section>
+
+
+            <!-- Customer Table -->
+
+            <section class="customer-list">
+
+                <div class="customer-list-header">
+                    <h2>All Customers</h2>
+
+                    <input
+                        type="search"
+                        id="searchCustomer"
+                        placeholder="Search customer..."
+                    >
+                </div>
+
+
+                <div class="customer-table-wrapper">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Customer Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Total Orders</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="customerTable">
+
+                            <tr>
+                                <td>#001</td>
+                                <td>Ihsan Ullah</td>
+                                <td>ihsan@gmail.com</td>
+                                <td>03001234567</td>
+                                <td>12</td>
+                                <td><span class="status active-status">Active</span></td>
+                                <td>
+                                    <button class="view-btn">View</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#002</td>
+                                <td>Ali Khan</td>
+                                <td>ali@gmail.com</td>
+                                <td>03111234567</td>
+                                <td>8</td>
+                                <td><span class="status active-status">Active</span></td>
+                                <td>
+                                    <button class="view-btn">View</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#003</td>
+                                <td>Ahmed Khan</td>
+                                <td>ahmed@gmail.com</td>
+                                <td>03221234567</td>
+                                <td>5</td>
+                                <td><span class="status inactive-status">Inactive</span></td>
+                                <td>
+                                    <button class="view-btn">View</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#004</td>
+                                <td>Sara Ahmed</td>
+                                <td>sara@gmail.com</td>
+                                <td>03331234567</td>
+                                <td>15</td>
+                                <td><span class="status active-status">Active</span></td>
+                                <td>
+                                    <button class="view-btn">View</button>
+                                    <button class="delete-btn">Delete</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
