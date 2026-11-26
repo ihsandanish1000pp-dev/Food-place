@@ -1,5 +1,3 @@
-
-
 document
   .getElementById("Admin-pinal")
   .addEventListener("click", function (event) {
@@ -63,11 +61,23 @@ function goToAdminPage() {
   window.location.href = "Admin-page.html";
 }
 
-
-
-  
 //  Admin page
 
+// let ManageFoodbtn = document.querySelector("#mangeFood");
+
+// ManageFoodbtn.addEventListener("click", manageFood);
+
+// function manageFood() {
+//   document.getElementById("Mfood").innerHTML = `
+
+//       <div class = 'ManFood'>
+
+//              <h1>Welcome </h1>
+
+//       </div>
+
+//      `;
+// }
 
 
- l
+
