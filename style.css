@@ -1375,3 +1375,259 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+/* ===== Food Dashboard ===== */
+
+.food-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+/* ===== Sidebar ===== */
+
+.food-sidebar {
+    width: 250px;
+    background: #1e1e2f;
+    color: white;
+    padding: 30px 20px;
+    flex-shrink: 0;
+}
+
+.food-sidebar h2 {
+    color: #d4af37;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.food-sidebar ul {
+    list-style: none;
+}
+
+.food-sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.food-sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    padding: 14px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.food-sidebar ul li a:hover,
+.food-sidebar ul li a.active {
+    background: #d4af37;
+    color: #1e1e2f;
+}
+
+/* ===== Main Content ===== */
+
+.food-content {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+}
+
+/* ===== Header ===== */
+
+.food-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.food-header h1 {
+    color: #1e1e2f;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.food-header p {
+    color: #777;
+}
+
+.food-back-btn {
+    background: #d4af37;
+    color: #1e1e2f;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+/* ===== Add Food Form ===== */
+
+.add-food {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.add-food h2 {
+    color: #1e1e2f;
+    margin-bottom: 25px;
+}
+
+#foodForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #d4af37;
+}
+
+/* ===== Add Button ===== */
+
+#addFoodBtn {
+    grid-column: 1 / -1;
+    background: #d4af37;
+    color: #1e1e2f;
+    border: none;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addFoodBtn:hover {
+    background: #1e1e2f;
+    color: white;
+}
+
+/* ===== Food List ===== */
+
+.food-list {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.food-list h2 {
+    color: #1e1e2f;
+    margin-bottom: 25px;
+}
+
+.food-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.food-list table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.food-list th,
+.food-list td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.food-list th {
+    background: #1e1e2f;
+    color: white;
+    font-size: 14px;
+}
+
+.food-list td {
+    color: #555;
+    font-size: 14px;
+}
+
+.food-list tbody tr:hover {
+    background: #faf8f0;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+
+    #foodForm {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .food-dashboard {
+        flex-direction: column;
+    }
+
+    .food-sidebar {
+        width: 100%;
+    }
+
+    .food-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .food-sidebar ul li {
+        margin: 0;
+    }
+
+    .food-content {
+        padding: 15px;
+    }
+
+    .food-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #foodForm {
+        grid-template-columns: 1fr;
+    }
+
+    .food-list,
+    .add-food {
+        padding: 18px;
+    }
+}
